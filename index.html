@@ -1,0 +1,1833 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply to be a Camp Director or Assistant Camp Director — The Government of Barbados</title>
+    <link rel="icon" href="https://unpkg.com/@govtech-bb/styles@1.0.0-alpha.16/dist/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/@govtech-bb/styles@1.0.0-alpha.16/dist/styles.css" />
+    <style>
+      .form-page {
+        padding-block: var(--spacing-l);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xm);
+      }
+      @media (width >= 1024px) {
+        .form-page {
+          gap: var(--spacing-m);
+        }
+      }
+      .form-page__inner {
+        max-width: 41rem;
+      }
+      .form-page__service-title {
+        display: inline-flex;
+        align-items: center;
+        padding: var(--spacing-xs) var(--spacing-s);
+        border-left: var(--spacing-xxs) solid var(--color-blue-40);
+        color: var(--color-mid-grey-00);
+      }
+      .form-page__heading {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-s);
+        margin-bottom: var(--spacing-m);
+      }
+      .form-step { display: none; }
+      .form-step.is-active { display: block; }
+      .section-subhead {
+        margin-top: var(--spacing-l);
+        margin-bottom: var(--spacing-s);
+      }
+      .conditional { display: none; }
+      .conditional.is-open { display: block; }
+      .conditional--reveal {
+        border-left: var(--spacing-xxs) solid var(--color-mid-grey-30);
+        padding-left: var(--spacing-m);
+        margin-top: var(--spacing-s);
+      }
+      .repeatable-item {
+        border: 1px solid var(--color-mid-grey-30);
+        border-radius: 6px;
+        padding: var(--spacing-m);
+        margin-bottom: var(--spacing-m);
+        position: relative;
+      }
+      .repeatable-item__label {
+        font-weight: 600;
+        margin-bottom: var(--spacing-s);
+        display: block;
+      }
+      .repeatable-actions { margin-top: var(--spacing-s); }
+      /* Fallback: the alpha stylesheet has no govbb-form-group--error rule yet */
+      .govbb-form-group--error {
+        border-left: var(--spacing-xxs) solid #d4351c;
+        padding-left: var(--spacing-m);
+      }
+      .placeholder-note {
+        background: var(--color-yellow-90, #fff6d6);
+        padding: var(--spacing-xs) var(--spacing-s);
+        border-radius: 4px;
+        font-size: 0.9375rem;
+      }
+      .cya-table { width: 100%; border-collapse: collapse; }
+      .cya-table th,
+      .cya-table td {
+        text-align: left;
+        vertical-align: top;
+        padding: var(--spacing-s) var(--spacing-m) var(--spacing-s) 0;
+        border-bottom: 1px solid var(--color-mid-grey-30);
+      }
+      .cya-table th { width: 45%; font-weight: 600; }
+      .cya-table td.cya-change { width: 10%; text-align: right; white-space: nowrap; }
+      .cya-section-title { margin-top: var(--spacing-l); margin-bottom: var(--spacing-xs); }
+      ul.plain-list { padding-left: var(--spacing-l); }
+      ul.plain-list li { margin-bottom: var(--spacing-xs); }
+    </style>
+  </head>
+  <body class="govbb-page">
+    <div>
+      <div class="govbb-official-banner">
+        <div class="govbb-container govbb-official-banner__inner">
+          <div class="govbb-official-banner__crest">
+            <img class="govbb-official-banner__icon" src="https://unpkg.com/@govtech-bb/styles@1.0.0-alpha.16/dist/assets/images/govbb-creast.svg" alt="" />
+          </div>
+          <div class="govbb-official-banner__text">
+            <span>Official government website</span>
+          </div>
+        </div>
+      </div>
+
+      <header class="govbb-header">
+        <div class="govbb-container govbb-header__inner">
+          <a href="#" aria-label="Go to the alpha.gov.bb homepage">
+            <img class="govbb-header__logo" src="https://unpkg.com/@govtech-bb/styles@1.0.0-alpha.16/dist/assets/images/govbb-logo.svg" alt="GOVBB" />
+          </a>
+        </div>
+      </header>
+    </div>
+
+    <main class="govbb-page__main">
+      <div
+        class="govbb-status-banner govbb-status-banner--alpha"
+        role="status"
+        aria-label="alpha status banner"
+        aria-live="polite"
+      >
+        <div class="govbb-container">
+          <p>
+            This is a new service in
+            <a class="govbb-link govbb-link--secondary" href="#">Alpha</a>. Your feedback will help
+            us improve it.
+          </p>
+        </div>
+      </div>
+
+      <div class="govbb-container">
+        <div class="form-page form-page__inner">
+          <!-- ============================================================ -->
+          <!-- START / ENTRY PAGE                                           -->
+          <!-- ============================================================ -->
+          <section class="form-step is-active" id="step-start" data-title="Start">
+            <div class="form-page__heading">
+              <span class="form-page__service-title govbb-text-body"
+                >National Summer Camp Programme 2026</span
+              >
+              <h1 class="govbb-text-display">
+                Apply to be a Camp Director or Assistant Camp Director
+              </h1>
+              <p class="govbb-text-body">
+                Use this service to apply to volunteer as a Camp Director or Assistant Camp Director
+                with the National Summer Camp Programme 2026.
+              </p>
+              <p class="placeholder-note">Applications close on [date].</p>
+            </div>
+
+            <button class="govbb-btn" type="button" data-goto="0">Start now</button>
+
+            <h2 class="govbb-text-h2 section-subhead">What you need before you start</h2>
+            <p class="govbb-text-body">You will need:</p>
+            <ul class="plain-list govbb-text-body">
+              <li>
+                your Barbados National Identification (ID) card, as you will need to enter the number
+                and upload a digital copy
+              </li>
+              <li>contact details for your emergency contact</li>
+              <li>details of any medicine or allergies</li>
+              <li>dates and details of your camp, work or volunteer experience</li>
+              <li>dates and details of your education and training</li>
+              <li>contact details for 3 people who can give a reference and are not relatives</li>
+              <li>digital copies of 2 reference letters</li>
+              <li>a digital copy of your health certificate</li>
+            </ul>
+
+            <h2 class="govbb-text-h2 section-subhead">Cost</h2>
+            <p class="govbb-text-body">There is no cost to apply.</p>
+
+            <h2 class="govbb-text-h2 section-subhead">How long it takes</h2>
+            <p class="govbb-text-body">The application takes about 20 to 30 minutes to complete.</p>
+            <p class="govbb-text-body">
+              It may take longer if you need to find or upload your documents.
+            </p>
+
+            <h2 class="govbb-text-h2 section-subhead">What happens after you apply</h2>
+            <p class="govbb-text-body">
+              The Ministry of Youth, Sports and Community Empowerment will review your application.
+            </p>
+            <p class="govbb-text-body">They may contact you if they need more information.</p>
+
+            <h2 class="govbb-text-h2 section-subhead">If you need help</h2>
+            <p class="govbb-text-body">
+              Contact the Ministry of Youth, Sports and Community Empowerment if you need help with
+              your application.
+            </p>
+            <p class="govbb-text-body">Email: <span class="placeholder-note">[confirmed email address]</span></p>
+            <p class="govbb-text-body">Phone: <span class="placeholder-note">[confirmed phone number]</span></p>
+
+            <h2 class="govbb-text-h2 section-subhead">Start the service</h2>
+            <button class="govbb-btn" type="button" data-goto="0">Start now</button>
+          </section>
+
+          <!-- ============================================================ -->
+          <!-- THE FORM                                                     -->
+          <!-- ============================================================ -->
+          <form id="camp-form" novalidate>
+            <!-- Error summary (shared, moved into the active step on validation) -->
+            <div
+              class="govbb-error-summary"
+              id="error-summary"
+              role="alert"
+              tabindex="-1"
+              hidden
+              style="display:none; margin-bottom: var(--spacing-m);"
+            >
+              <h2 class="govbb-error-summary__title">There is a problem</h2>
+              <ul class="govbb-error-summary__list" id="error-summary-list"></ul>
+            </div>
+
+            <!-- STEP 0: application type -->
+            <section class="form-step" id="step-application-type" data-title="What you are applying for">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us what you are applying for</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Which position are you applying for?">
+                  <legend class="govbb-fieldset__legend">Which position are you applying for?</legend>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="position-director" type="radio" name="position" value="Camp Director" />
+                    <label class="govbb-radio-item__label" for="position-director">Camp Director</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="position-assistant" type="radio" name="position" value="Assistant Camp Director" />
+                    <label class="govbb-radio-item__label" for="position-assistant">Assistant Camp Director</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Which area are you interested in?">
+                  <legend class="govbb-fieldset__legend">Which area are you interested in?</legend>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="area-general" type="radio" name="area" value="General" />
+                    <label class="govbb-radio-item__label" for="area-general">General</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="area-cultural" type="radio" name="area" value="Cultural Arts" />
+                    <label class="govbb-radio-item__label" for="area-cultural">Cultural Arts</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="area-support" type="radio" name="area" value="Working with children who need additional support" />
+                    <label class="govbb-radio-item__label" for="area-support">Working with children who need additional support</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="preferred-venue">Preferred parish or camp venue</label>
+                <p class="govbb-hint" id="preferred-venue-hint">This is not guaranteed.</p>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="preferred-venue" name="preferred_venue" type="text" aria-describedby="preferred-venue-hint" />
+                </div>
+              </div>
+            </section>
+
+            <!-- STEP 1: about yourself -->
+            <section class="form-step" id="step-about-you" data-title="About yourself">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us about yourself</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="first-name">First name</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="first-name" name="first_name" type="text" data-required data-label="First name" />
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="middle-name">Middle name(s)</label>
+                <p class="govbb-hint" id="middle-name-hint">Enter all middle names in order.</p>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="middle-name" name="middle_name" type="text" aria-describedby="middle-name-hint" />
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="last-name">Last name</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="last-name" name="last_name" type="text" data-required data-label="Last name" />
+                </div>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" aria-describedby="dob-hint" data-required data-label="Date of birth">
+                  <legend class="govbb-fieldset__legend">Date of birth</legend>
+                  <p class="govbb-hint" id="dob-hint">For example, 27 3 1990</p>
+                  <div class="govbb-date-input">
+                    <div class="govbb-date-input__part">
+                      <label class="govbb-date-input__label" for="dob-day">Day</label>
+                      <div class="govbb-date-input-wrapper">
+                        <input class="govbb-date-input__field" id="dob-day" name="dob_day" type="text" inputmode="numeric" />
+                      </div>
+                    </div>
+                    <div class="govbb-date-input__part">
+                      <label class="govbb-date-input__label" for="dob-month">Month</label>
+                      <div class="govbb-date-input-wrapper">
+                        <input class="govbb-date-input__field" id="dob-month" name="dob_month" type="text" inputmode="numeric" />
+                      </div>
+                    </div>
+                    <div class="govbb-date-input__part">
+                      <label class="govbb-date-input__label" for="dob-year">Year</label>
+                      <div class="govbb-date-input-wrapper govbb-date-input-wrapper--year">
+                        <input class="govbb-date-input__field" id="dob-year" name="dob_year" type="text" inputmode="numeric" />
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Sex">
+                  <legend class="govbb-fieldset__legend">Sex</legend>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="sex-female" type="radio" name="sex" value="Female" />
+                    <label class="govbb-radio-item__label" for="sex-female">Female</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="sex-male" type="radio" name="sex" value="Male" />
+                    <label class="govbb-radio-item__label" for="sex-male">Male</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="nrn">Barbados National Identification (ID) number</label>
+                <p class="govbb-hint" id="nrn-hint">You can find this on your national ID card. For example, 850101-1234.</p>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="nrn" name="nrn" type="text" aria-describedby="nrn-hint" data-required data-label="Barbados National Identification (ID) number" />
+                </div>
+              </div>
+            </section>
+
+            <!-- STEP 2: contact details -->
+            <section class="form-step" id="step-contact" data-title="Your contact details">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Your contact details</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="addr1">Street address line 1</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="addr1" name="addr1" type="text" data-required data-label="Street address line 1" />
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="addr2">Street address line 2</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="addr2" name="addr2" type="text" />
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="parish">Parish</label>
+                <div class="govbb-select-wrapper">
+                  <select class="govbb-select" id="parish" name="parish" data-required data-label="Parish">
+                    <option value="">Select a parish</option>
+                    <option>Christ Church</option>
+                    <option>St. Andrew</option>
+                    <option>St. George</option>
+                    <option>St. James</option>
+                    <option>St. John</option>
+                    <option>St. Joseph</option>
+                    <option>St. Lucy</option>
+                    <option>St. Michael</option>
+                    <option>St. Peter</option>
+                    <option>St. Philip</option>
+                    <option>St. Thomas</option>
+                  </select>
+                  <span class="govbb-select__chevron" aria-hidden="true">
+                    <svg viewBox="0 0 12 8"><path d="M6 8 0 0h12z" /></svg>
+                  </span>
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="email">Email address</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="email" name="email" type="email" data-required data-label="Email address" />
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="mobile">Mobile phone number</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="mobile" name="mobile" type="tel" data-required data-label="Mobile phone number" />
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="home-phone">Home phone number</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="home-phone" name="home_phone" type="tel" />
+                </div>
+              </div>
+            </section>
+
+            <!-- STEP 3: current status -->
+            <section class="form-step" id="step-current-status" data-title="What you do now">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us what you do now</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Which of these describes you now?">
+                  <legend class="govbb-fieldset__legend">Which of these describes you now?</legend>
+                  <div class="govbb-hint">Select all that apply.</div>
+                  <div class="govbb-checkboxes" id="status-checkboxes">
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="status-employed" type="checkbox" name="status" value="Employed" data-exclusive-with="Unemployed" />
+                      <label class="govbb-checkbox-item__label" for="status-employed">Employed</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="status-self" type="checkbox" name="status" value="Self-employed" data-exclusive-with="Unemployed" />
+                      <label class="govbb-checkbox-item__label" for="status-self">Self-employed</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="status-student" type="checkbox" name="status" value="Student" />
+                      <label class="govbb-checkbox-item__label" for="status-student">Student</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="status-unemployed" type="checkbox" name="status" value="Unemployed" data-exclusive-with="Employed,Self-employed" />
+                      <label class="govbb-checkbox-item__label" for="status-unemployed">Unemployed</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="status-retired" type="checkbox" name="status" value="Retired" />
+                      <label class="govbb-checkbox-item__label" for="status-retired">Retired</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Are you a Give Back volunteer?">
+                  <legend class="govbb-fieldset__legend">Are you a Give Back volunteer?</legend>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="giveback-yes" type="radio" name="giveback" value="Yes" data-reveal="giveback-details" />
+                    <label class="govbb-radio-item__label" for="giveback-yes">Yes</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="giveback-no" type="radio" name="giveback" value="No" data-reveal="" />
+                    <label class="govbb-radio-item__label" for="giveback-no">No</label>
+                  </div>
+                </fieldset>
+                <div class="conditional conditional--reveal" id="giveback-details">
+                  <div class="govbb-form-group">
+                    <label class="govbb-label" for="giveback-institution">Institution</label>
+                    <div class="govbb-input-wrapper">
+                      <input class="govbb-input" id="giveback-institution" name="giveback_institution" type="text" />
+                    </div>
+                  </div>
+                  <div class="govbb-form-group">
+                    <label class="govbb-label" for="giveback-study">Area of study</label>
+                    <div class="govbb-input-wrapper">
+                      <input class="govbb-input" id="giveback-study" name="giveback_study" type="text" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="conditional conditional--reveal" id="work-details">
+                <h2 class="govbb-text-h2 section-subhead">Your work details</h2>
+                <div class="govbb-form-group">
+                  <label class="govbb-label" for="work-phone">Work phone number</label>
+                  <div class="govbb-input-wrapper">
+                    <input class="govbb-input" id="work-phone" name="work_phone" type="tel" />
+                  </div>
+                </div>
+                <div class="govbb-form-group">
+                  <label class="govbb-label" for="work-addr1">Street address line 1</label>
+                  <div class="govbb-input-wrapper">
+                    <input class="govbb-input" id="work-addr1" name="work_addr1" type="text" />
+                  </div>
+                </div>
+                <div class="govbb-form-group">
+                  <label class="govbb-label" for="work-addr2">Street address line 2</label>
+                  <div class="govbb-input-wrapper">
+                    <input class="govbb-input" id="work-addr2" name="work_addr2" type="text" />
+                  </div>
+                </div>
+                <div class="govbb-form-group">
+                  <label class="govbb-label" for="work-parish">Parish</label>
+                  <div class="govbb-select-wrapper">
+                    <select class="govbb-select" id="work-parish" name="work_parish">
+                      <option value="">Select a parish</option>
+                      <option>Christ Church</option>
+                      <option>St. Andrew</option>
+                      <option>St. George</option>
+                      <option>St. James</option>
+                      <option>St. John</option>
+                      <option>St. Joseph</option>
+                      <option>St. Lucy</option>
+                      <option>St. Michael</option>
+                      <option>St. Peter</option>
+                      <option>St. Philip</option>
+                      <option>St. Thomas</option>
+                    </select>
+                    <span class="govbb-select__chevron" aria-hidden="true">
+                      <svg viewBox="0 0 12 8"><path d="M6 8 0 0h12z" /></svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- STEP 4: emergency contact -->
+            <section class="form-step" id="step-emergency" data-title="Your emergency contact">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Your emergency contact</h1>
+                <p class="govbb-text-body">This is someone the Ministry can contact in an emergency.</p>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="ec-first">First name</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="ec-first" name="ec_first" type="text" data-required data-label="Emergency contact first name" />
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="ec-middle">Middle name(s)</label>
+                <p class="govbb-hint" id="ec-middle-hint">Enter all middle names in order.</p>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="ec-middle" name="ec_middle" type="text" aria-describedby="ec-middle-hint" />
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="ec-last">Last name</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="ec-last" name="ec_last" type="text" data-required data-label="Emergency contact last name" />
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="ec-email">Email address</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="ec-email" name="ec_email" type="email" />
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="ec-phone">Phone number</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="ec-phone" name="ec_phone" type="tel" data-required data-label="Emergency contact phone number" />
+                </div>
+              </div>
+            </section>
+
+            <!-- STEP 5: health -->
+            <section class="form-step" id="step-health" data-title="About your health">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us about your health</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Do you have any of these health conditions or support needs?">
+                  <legend class="govbb-fieldset__legend">Do you have any of these health conditions or support needs?</legend>
+                  <div class="govbb-hint">Select all that apply.</div>
+                  <div class="govbb-checkboxes" id="health-checkboxes">
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-allergies" type="checkbox" name="health" value="Allergies" data-reveal="health-allergies" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-allergies">Allergies</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-asthma" type="checkbox" name="health" value="Asthma" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-asthma">Asthma</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-bp" type="checkbox" name="health" value="High blood pressure" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-bp">High blood pressure</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-physical" type="checkbox" name="health" value="Physical limitations" data-reveal="health-physical" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-physical">Physical limitations</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-epilepsy" type="checkbox" name="health" value="Epilepsy" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-epilepsy">Epilepsy</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-heart" type="checkbox" name="health" value="Heart disease" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-heart">Heart disease</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-anaemia" type="checkbox" name="health" value="Anaemia" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-anaemia">Anaemia</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-visual" type="checkbox" name="health" value="Visual limitations" data-reveal="health-visual" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-visual">Visual limitations</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-sinusitis" type="checkbox" name="health" value="Sinusitis" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-sinusitis">Sinusitis</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-diabetes" type="checkbox" name="health" value="Diabetes" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-diabetes">Diabetes</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-hearing" type="checkbox" name="health" value="Hearing difficulties" data-reveal="health-hearing" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-hearing">Hearing difficulties</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-other" type="checkbox" name="health" value="Other" data-reveal="health-other" data-exclusive-with="None of these" />
+                      <label class="govbb-checkbox-item__label" for="h-other">Other</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="h-none" type="checkbox" name="health" value="None of these" data-exclusive-all="true" />
+                      <label class="govbb-checkbox-item__label" for="h-none">None of these</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="conditional conditional--reveal" id="health-allergies">
+                <div class="govbb-form-group">
+                  <label class="govbb-label" for="allergy-details">Tell us about your allergies</label>
+                  <div class="govbb-input-wrapper">
+                    <textarea class="govbb-textarea" id="allergy-details" name="allergy_details" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional conditional--reveal" id="health-physical">
+                <div class="govbb-form-group">
+                  <label class="govbb-label" for="physical-details">Tell us about the physical limitation</label>
+                  <div class="govbb-input-wrapper">
+                    <textarea class="govbb-textarea" id="physical-details" name="physical_details" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional conditional--reveal" id="health-visual">
+                <div class="govbb-form-group">
+                  <label class="govbb-label" for="visual-details">Tell us about the visual limitation</label>
+                  <div class="govbb-input-wrapper">
+                    <textarea class="govbb-textarea" id="visual-details" name="visual_details" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional conditional--reveal" id="health-hearing">
+                <div class="govbb-form-group">
+                  <label class="govbb-label" for="hearing-details">Tell us about the hearing difficulty</label>
+                  <div class="govbb-input-wrapper">
+                    <textarea class="govbb-textarea" id="hearing-details" name="hearing_details" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional conditional--reveal" id="health-other">
+                <div class="govbb-form-group">
+                  <label class="govbb-label" for="other-details">Tell us about the other health condition or support need</label>
+                  <div class="govbb-input-wrapper">
+                    <textarea class="govbb-textarea" id="other-details" name="other_details" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Are you currently taking any medicine?">
+                  <legend class="govbb-fieldset__legend">Are you currently taking any medicine?</legend>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="medicine-yes" type="radio" name="medicine" value="Yes" data-reveal="medicine-details" />
+                    <label class="govbb-radio-item__label" for="medicine-yes">Yes</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="medicine-no" type="radio" name="medicine" value="No" data-reveal="" />
+                    <label class="govbb-radio-item__label" for="medicine-no">No</label>
+                  </div>
+                </fieldset>
+                <div class="conditional conditional--reveal" id="medicine-details">
+                  <div class="govbb-form-group">
+                    <label class="govbb-label" for="medicine-text">Medicine you are taking</label>
+                    <div class="govbb-input-wrapper">
+                      <textarea class="govbb-textarea" id="medicine-text" name="medicine_text" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Are you allergic to any medicine?">
+                  <legend class="govbb-fieldset__legend">Are you allergic to any medicine?</legend>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="medallergy-yes" type="radio" name="med_allergy" value="Yes" data-reveal="medallergy-details" />
+                    <label class="govbb-radio-item__label" for="medallergy-yes">Yes</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="medallergy-no" type="radio" name="med_allergy" value="No" data-reveal="" />
+                    <label class="govbb-radio-item__label" for="medallergy-no">No</label>
+                  </div>
+                </fieldset>
+                <div class="conditional conditional--reveal" id="medallergy-details">
+                  <div class="govbb-form-group">
+                    <label class="govbb-label" for="medallergy-text">Medicine you are allergic to</label>
+                    <div class="govbb-input-wrapper">
+                      <textarea class="govbb-textarea" id="medallergy-text" name="med_allergy_text" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- STEP 6: camp experience -->
+            <section class="form-step" id="step-camp-experience" data-title="Camp experience">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us about your camp experience</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Do you have camp experience?">
+                  <legend class="govbb-fieldset__legend">Do you have camp experience?</legend>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="camp-yes" type="radio" name="camp_exp" value="Yes" data-reveal="camp-exp-list" />
+                    <label class="govbb-radio-item__label" for="camp-yes">Yes</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="camp-no" type="radio" name="camp_exp" value="No" data-reveal="" />
+                    <label class="govbb-radio-item__label" for="camp-no">No</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="conditional" id="camp-exp-list">
+                <div class="repeatable" data-repeatable="camp" data-template="tpl-camp" data-label="Camp experience"></div>
+                <button class="govbb-btn--secondary" type="button" data-add="camp">Add another camp experience</button>
+              </div>
+            </section>
+
+            <!-- STEP 7: work & volunteer experience -->
+            <section class="form-step" id="step-work-experience" data-title="Work and volunteer experience">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us about your work and volunteer experience</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Do you have paid or volunteer work experience?">
+                  <legend class="govbb-fieldset__legend">Do you have paid or volunteer work experience?</legend>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="work-yes" type="radio" name="work_exp" value="Yes" data-reveal="work-exp-list" />
+                    <label class="govbb-radio-item__label" for="work-yes">Yes</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="work-no" type="radio" name="work_exp" value="No" data-reveal="" />
+                    <label class="govbb-radio-item__label" for="work-no">No</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="conditional" id="work-exp-list">
+                <div class="repeatable" data-repeatable="work" data-template="tpl-work" data-label="Work or volunteer experience"></div>
+                <button class="govbb-btn--secondary" type="button" data-add="work">Add another work or volunteer experience</button>
+              </div>
+            </section>
+
+            <!-- STEP 8: references -->
+            <section class="form-step" id="step-references" data-title="Your references">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us about your references</h1>
+              </div>
+              <ul class="plain-list govbb-text-body">
+                <li>You must add 3 references.</li>
+                <li>Your references must not be relatives.</li>
+                <li>Ask each person before adding their contact details.</li>
+              </ul>
+              <div class="repeatable" id="references-list" data-repeatable="reference" data-template="tpl-reference" data-label="Reference" data-fixed="3"></div>
+            </section>
+
+            <!-- STEP 9: organisations -->
+            <section class="form-step" id="step-organisations" data-title="Organisations you belong to">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us about organisations you belong to</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Do you belong to any organisations?">
+                  <legend class="govbb-fieldset__legend">Do you belong to any organisations?</legend>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="org-yes" type="radio" name="orgs" value="Yes" data-reveal="org-list" />
+                    <label class="govbb-radio-item__label" for="org-yes">Yes</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="org-no" type="radio" name="orgs" value="No" data-reveal="" />
+                    <label class="govbb-radio-item__label" for="org-no">No</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="conditional" id="org-list">
+                <div class="repeatable" data-repeatable="org" data-template="tpl-org" data-label="Organisation"></div>
+                <button class="govbb-btn--secondary" type="button" data-add="org">Add another organisation</button>
+              </div>
+            </section>
+
+            <!-- STEP 10: education -->
+            <section class="form-step" id="step-education" data-title="Your education">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us about your education</h1>
+                <p class="govbb-text-body">Add each school or institution you attended.</p>
+              </div>
+              <div class="repeatable" data-repeatable="education" data-template="tpl-education" data-label="Education"></div>
+              <button class="govbb-btn--secondary" type="button" data-add="education">Add another school or institution</button>
+            </section>
+
+            <!-- STEP 11: training -->
+            <section class="form-step" id="step-training" data-title="Training and certificates">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us about your training and certificates</h1>
+                <p class="govbb-text-body">Add any training, certificates or qualifications that support your application.</p>
+              </div>
+              <div class="repeatable" data-repeatable="training" data-template="tpl-training" data-label="Training or certificate"></div>
+              <button class="govbb-btn--secondary" type="button" data-add="training">Add another training or certificate</button>
+            </section>
+
+            <!-- STEP 12: skills -->
+            <section class="form-step" id="step-skills" data-title="Skills and activities">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us about your skills and activities</h1>
+                <p class="govbb-text-body">Add any skills or activities you can lead or help with at camp.</p>
+                <p class="govbb-text-body">If you have a certificate for a skill, add it in the training and certificates section.</p>
+              </div>
+              <div class="repeatable" data-repeatable="skill" data-template="tpl-skill" data-label="Skill or activity"></div>
+              <button class="govbb-btn--secondary" type="button" data-add="skill">Add another skill or activity</button>
+            </section>
+
+            <!-- STEP 13: why volunteer -->
+            <section class="form-step" id="step-why" data-title="Why you want to volunteer">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Tell us why you want to volunteer</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="contribute">What can you contribute to the camp?</label>
+                <div class="govbb-input-wrapper">
+                  <textarea class="govbb-textarea" id="contribute" name="contribute" rows="4" data-required data-label="What can you contribute to the camp?"></textarea>
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="well-run">What can a well-run camp contribute to children?</label>
+                <div class="govbb-input-wrapper">
+                  <textarea class="govbb-textarea" id="well-run" name="well_run" rows="4" data-required data-label="What can a well-run camp contribute to children?"></textarea>
+                </div>
+              </div>
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="goals">What personal goals do you hope to achieve through this volunteer work?</label>
+                <div class="govbb-input-wrapper">
+                  <textarea class="govbb-textarea" id="goals" name="goals" rows="4" data-required data-label="What personal goals do you hope to achieve?"></textarea>
+                </div>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Do you have any concerns about being responsible for children for at least 7 hours a day?">
+                  <legend class="govbb-fieldset__legend">Do you have any concerns about being responsible for children for at least 7 hours a day?</legend>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="concerns-yes" type="radio" name="concerns" value="Yes" data-reveal="concerns-details" />
+                    <label class="govbb-radio-item__label" for="concerns-yes">Yes</label>
+                  </div>
+                  <div class="govbb-radio-item">
+                    <input class="govbb-radio" id="concerns-no" type="radio" name="concerns" value="No" data-reveal="" />
+                    <label class="govbb-radio-item__label" for="concerns-no">No</label>
+                  </div>
+                </fieldset>
+                <div class="conditional conditional--reveal" id="concerns-details">
+                  <div class="govbb-form-group">
+                    <label class="govbb-label" for="concerns-text">Tell us about your concerns</label>
+                    <div class="govbb-input-wrapper">
+                      <textarea class="govbb-textarea" id="concerns-text" name="concerns_text" rows="4"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- STEP 14: uploads -->
+            <section class="form-step" id="step-uploads" data-title="Photo and documents">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Upload your photo and documents</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="upload-photo">Photo for camp ID card</label>
+                <p class="govbb-hint" id="upload-photo-hint">Upload a clear photo of your face.</p>
+                <div class="govbb-file-upload">
+                  <label class="govbb-file-upload__dropzone" for="upload-photo">
+                    <div class="govbb-file-upload__info">
+                      <span class="govbb-file-upload__title">Upload a file</span>
+                      <span class="govbb-file-upload__subtitle">Attach a .jpg, .png or .pdf file</span>
+                    </div>
+                    <input class="govbb-file-upload__input" id="upload-photo" name="upload_photo" type="file" accept="image/*,.pdf" aria-describedby="upload-photo-hint" data-required data-label="Photo for camp ID card" />
+                    <div class="govbb-file-upload__action">
+                      <span class="govbb-btn govbb-btn--secondary">Choose file</span>
+                      <span class="govbb-file-upload__max-size">Maximum size: 25MB</span>
+                    </div>
+                  </label>
+                  <ul class="govbb-file-upload__list" data-file-list-for="upload-photo"></ul>
+                </div>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="upload-id">Barbados National Identification (ID) card</label>
+                <div class="govbb-file-upload">
+                  <label class="govbb-file-upload__dropzone" for="upload-id">
+                    <div class="govbb-file-upload__info">
+                      <span class="govbb-file-upload__title">Upload a file</span>
+                      <span class="govbb-file-upload__subtitle">Attach a .jpg, .png or .pdf file</span>
+                    </div>
+                    <input class="govbb-file-upload__input" id="upload-id" name="upload_id" type="file" accept="image/*,.pdf" data-required data-label="Barbados National Identification (ID) card" />
+                    <div class="govbb-file-upload__action">
+                      <span class="govbb-btn govbb-btn--secondary">Choose file</span>
+                      <span class="govbb-file-upload__max-size">Maximum size: 25MB</span>
+                    </div>
+                  </label>
+                  <ul class="govbb-file-upload__list" data-file-list-for="upload-id"></ul>
+                </div>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="upload-ref1">Reference letter 1</label>
+                <div class="govbb-file-upload">
+                  <label class="govbb-file-upload__dropzone" for="upload-ref1">
+                    <div class="govbb-file-upload__info">
+                      <span class="govbb-file-upload__title">Upload a file</span>
+                      <span class="govbb-file-upload__subtitle">Attach a .pdf, .docx or .png file</span>
+                    </div>
+                    <input class="govbb-file-upload__input" id="upload-ref1" name="upload_ref1" type="file" accept=".pdf,.docx,image/*" data-required data-label="Reference letter 1" />
+                    <div class="govbb-file-upload__action">
+                      <span class="govbb-btn govbb-btn--secondary">Choose file</span>
+                      <span class="govbb-file-upload__max-size">Maximum size: 25MB</span>
+                    </div>
+                  </label>
+                  <ul class="govbb-file-upload__list" data-file-list-for="upload-ref1"></ul>
+                </div>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="upload-ref2">Reference letter 2</label>
+                <div class="govbb-file-upload">
+                  <label class="govbb-file-upload__dropzone" for="upload-ref2">
+                    <div class="govbb-file-upload__info">
+                      <span class="govbb-file-upload__title">Upload a file</span>
+                      <span class="govbb-file-upload__subtitle">Attach a .pdf, .docx or .png file</span>
+                    </div>
+                    <input class="govbb-file-upload__input" id="upload-ref2" name="upload_ref2" type="file" accept=".pdf,.docx,image/*" data-required data-label="Reference letter 2" />
+                    <div class="govbb-file-upload__action">
+                      <span class="govbb-btn govbb-btn--secondary">Choose file</span>
+                      <span class="govbb-file-upload__max-size">Maximum size: 25MB</span>
+                    </div>
+                  </label>
+                  <ul class="govbb-file-upload__list" data-file-list-for="upload-ref2"></ul>
+                </div>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="upload-health">Health certificate</label>
+                <div class="govbb-file-upload">
+                  <label class="govbb-file-upload__dropzone" for="upload-health">
+                    <div class="govbb-file-upload__info">
+                      <span class="govbb-file-upload__title">Upload a file</span>
+                      <span class="govbb-file-upload__subtitle">Attach a .pdf, .docx or .png file</span>
+                    </div>
+                    <input class="govbb-file-upload__input" id="upload-health" name="upload_health" type="file" accept=".pdf,.docx,image/*" data-required data-label="Health certificate" />
+                    <div class="govbb-file-upload__action">
+                      <span class="govbb-btn govbb-btn--secondary">Choose file</span>
+                      <span class="govbb-file-upload__max-size">Maximum size: 25MB</span>
+                    </div>
+                  </label>
+                  <ul class="govbb-file-upload__list" data-file-list-for="upload-health"></ul>
+                </div>
+              </div>
+            </section>
+
+            <!-- STEP 15: check answers -->
+            <section class="form-step" id="step-check" data-title="Check your answers">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Check your answers</h1>
+              </div>
+              <div id="cya-content"></div>
+            </section>
+
+            <!-- STEP 16: agreement -->
+            <section class="form-step" id="step-agreement" data-title="Your agreement">
+              <div class="form-page__heading">
+                <span class="form-page__service-title govbb-text-body">Camp Director application</span>
+                <h1 class="govbb-text-h1">Your agreement</h1>
+              </div>
+
+              <div class="govbb-form-group">
+                <label class="govbb-label" for="agree-name">Full name</label>
+                <div class="govbb-input-wrapper">
+                  <input class="govbb-input" id="agree-name" name="agree_name" type="text" data-required data-label="Full name" />
+                </div>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" aria-describedby="agree-date-hint" data-required data-label="Date">
+                  <legend class="govbb-fieldset__legend">Date</legend>
+                  <p class="govbb-hint" id="agree-date-hint">For example, 10 6 2026</p>
+                  <div class="govbb-date-input">
+                    <div class="govbb-date-input__part">
+                      <label class="govbb-date-input__label" for="agree-day">Day</label>
+                      <div class="govbb-date-input-wrapper">
+                        <input class="govbb-date-input__field" id="agree-day" name="agree_day" type="text" inputmode="numeric" />
+                      </div>
+                    </div>
+                    <div class="govbb-date-input__part">
+                      <label class="govbb-date-input__label" for="agree-month">Month</label>
+                      <div class="govbb-date-input-wrapper">
+                        <input class="govbb-date-input__field" id="agree-month" name="agree_month" type="text" inputmode="numeric" />
+                      </div>
+                    </div>
+                    <div class="govbb-date-input__part">
+                      <label class="govbb-date-input__label" for="agree-year">Year</label>
+                      <div class="govbb-date-input-wrapper govbb-date-input-wrapper--year">
+                        <input class="govbb-date-input__field" id="agree-year" name="agree_year" type="text" inputmode="numeric" />
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="govbb-form-group">
+                <fieldset class="govbb-fieldset" data-required data-label="Confirmation">
+                  <legend class="govbb-fieldset__legend">Confirmation</legend>
+                  <div class="govbb-checkboxes">
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="confirm" type="checkbox" name="confirm" value="confirmed" />
+                      <label class="govbb-checkbox-item__label" for="confirm">
+                        I confirm that the information in this application is true and correct to the
+                        best of my knowledge. I understand that my application may be refused, or I
+                        may be removed from the programme, if I give false information or leave out
+                        important information. I give permission for the Ministry of Youth, Sports
+                        and Community Empowerment to check the information I have provided to assess
+                        whether I am suitable for this volunteer position.
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </section>
+          </form>
+
+          <!-- STEP 17: confirmation (outside form) -->
+          <section class="form-step" id="step-confirmation" data-title="Application submitted">
+            <div
+              class="govbb-status-banner"
+              style="background: var(--color-green-40, #00703c); color: #fff; padding: var(--spacing-l); margin-bottom: var(--spacing-l); border-radius: 6px;"
+            >
+              <h1 class="govbb-text-h1" style="color:#fff; margin:0;">Application submitted</h1>
+              <p style="margin: var(--spacing-s) 0 0;">
+                Your reference number is <strong id="ref-number">CD-000000</strong>
+              </p>
+            </div>
+            <p class="govbb-text-body">Your application has been submitted.</p>
+
+            <h2 class="govbb-text-h2 section-subhead">What happens next</h2>
+            <p class="govbb-text-body">
+              The Ministry of Youth, Sports and Community Empowerment will review your application.
+            </p>
+            <p class="govbb-text-body">They may contact you if they need more information.</p>
+
+            <h2 class="govbb-text-h2 section-subhead">If you need help</h2>
+            <p class="govbb-text-body">Email: <span class="placeholder-note">[confirmed email address]</span></p>
+            <p class="govbb-text-body">Phone: <span class="placeholder-note">[confirmed phone number]</span></p>
+          </section>
+
+          <!-- NAVIGATION (Back / Continue) -->
+          <div class="govbb-btn-group" id="nav-buttons" style="margin-top: var(--spacing-l); display:none;">
+            <button class="govbb-btn--secondary" type="button" id="btn-back">Back</button>
+            <button class="govbb-btn" type="button" id="btn-continue">Continue</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="govbb-footer">
+      <div class="govbb-container govbb-footer__inner">
+        <nav class="govbb-footer__nav" aria-label="Footer">
+          <a class="govbb-footer__link" href="#">Home</a>
+          <a class="govbb-footer__link" href="#">Cookie Policy</a>
+          <a class="govbb-footer__link" href="#">Terms &amp; Conditions</a>
+          <a class="govbb-footer__link" href="#">Sitemap</a>
+        </nav>
+        <hr class="govbb-footer__divider" aria-hidden="true" />
+        <div class="govbb-footer__end">
+          <img class="govbb-footer__coat" src="https://unpkg.com/@govtech-bb/styles@1.0.0-alpha.16/dist/assets/images/govbb-creast.svg" alt="Government of Barbados Coat of Arms" />
+          <p class="govbb-footer__copy">© 2026 Government of Barbados</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- TEMPLATES FOR REPEATABLE SECTIONS                            -->
+    <!-- ============================================================ -->
+    <template id="tpl-camp">
+      <div class="govbb-form-group">
+        <label class="govbb-label">Camp name</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Camp name" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Camp location</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Camp location" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Start date</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" placeholder="DD MM YYYY" data-field="Start date" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">End date</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" placeholder="DD MM YYYY" data-field="End date" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <fieldset class="govbb-fieldset">
+          <legend class="govbb-fieldset__legend">Were you a camper or staff member?</legend>
+          <div class="govbb-radio-item">
+            <input class="govbb-radio" type="radio" data-radio-name="camper_staff" value="Camper" data-field="Camper or staff" />
+            <label class="govbb-radio-item__label">Camper</label>
+          </div>
+          <div class="govbb-radio-item">
+            <input class="govbb-radio" type="radio" data-radio-name="camper_staff" value="Staff member" data-field="Camper or staff" />
+            <label class="govbb-radio-item__label">Staff member</label>
+          </div>
+        </fieldset>
+      </div>
+    </template>
+
+    <template id="tpl-work">
+      <div class="govbb-form-group">
+        <label class="govbb-label">Employer, organisation or supervisor name</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Employer/organisation" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Address</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Address" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Contact number</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="tel" data-field="Contact number" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Start date</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" placeholder="DD MM YYYY" data-field="Start date" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <fieldset class="govbb-fieldset">
+          <legend class="govbb-fieldset__legend">Are you still in this role?</legend>
+          <div class="govbb-radio-item">
+            <input class="govbb-radio" type="radio" data-radio-name="still_role" value="Yes" data-field="Still in role" data-item-reveal="hide" />
+            <label class="govbb-radio-item__label">Yes</label>
+          </div>
+          <div class="govbb-radio-item">
+            <input class="govbb-radio" type="radio" data-radio-name="still_role" value="No" data-field="Still in role" data-item-reveal="show" />
+            <label class="govbb-radio-item__label">No</label>
+          </div>
+        </fieldset>
+        <div class="conditional conditional--reveal" data-item-conditional>
+          <div class="govbb-form-group">
+            <label class="govbb-label">End date</label>
+            <div class="govbb-input-wrapper"><input class="govbb-input" type="text" placeholder="DD MM YYYY" data-field="End date" /></div>
+          </div>
+          <div class="govbb-form-group">
+            <label class="govbb-label">Reason for leaving</label>
+            <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Reason for leaving" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Type of work</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Type of work" /></div>
+      </div>
+    </template>
+
+    <template id="tpl-reference">
+      <div class="govbb-form-group">
+        <label class="govbb-label">First name</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="First name" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Middle name(s)</label>
+        <p class="govbb-hint">Enter all middle names in order.</p>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Middle name(s)" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Last name</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Last name" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Address</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Address" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Contact number</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="tel" data-field="Contact number" /></div>
+      </div>
+    </template>
+
+    <template id="tpl-org">
+      <div class="govbb-form-group">
+        <label class="govbb-label">Organisation name</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Organisation name" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Location</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Location" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Position held</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Position held" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Year or period</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Year or period" /></div>
+      </div>
+    </template>
+
+    <template id="tpl-education">
+      <div class="govbb-form-group">
+        <label class="govbb-label">Type of school or institution</label>
+        <div class="govbb-select-wrapper">
+          <select class="govbb-select" data-field="Type">
+            <option value="">Select a type</option>
+            <option>Primary</option>
+            <option>Secondary</option>
+            <option>Tertiary</option>
+            <option>Technical or vocational</option>
+          </select>
+          <span class="govbb-select__chevron" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M6 8 0 0h12z" /></svg></span>
+        </div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Name of school or institution</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Name of school" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Years attended</label>
+        <p class="govbb-hint">For example, 2015 to 2020.</p>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Years attended" /></div>
+      </div>
+    </template>
+
+    <template id="tpl-training">
+      <div class="govbb-form-group">
+        <label class="govbb-label">Name of training, certificate or qualification</label>
+        <p class="govbb-hint">For example, CXC, first aid, CPR, child care, coaching certificate, diploma or degree.</p>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Name" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Subject or area</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Subject or area" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">School, institution or organisation</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Institution" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Year completed</label>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Year completed" /></div>
+      </div>
+    </template>
+
+    <template id="tpl-skill">
+      <div class="govbb-form-group">
+        <label class="govbb-label">Skill area</label>
+        <div class="govbb-select-wrapper">
+          <select class="govbb-select" data-field="Skill area">
+            <option value="">Select a skill area</option>
+            <option>Health and safety</option>
+            <option>Personal development and leadership</option>
+            <option>Creative arts</option>
+            <option>Food service</option>
+            <option>Adventure and outdoor activities</option>
+            <option>Environment and agriculture</option>
+            <option>Hair and beauty</option>
+            <option>Business and administration</option>
+            <option>Arts, crafts and culture</option>
+            <option>Sports</option>
+          </select>
+          <span class="govbb-select__chevron" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M6 8 0 0h12z" /></svg></span>
+        </div>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Skill or activity name</label>
+        <p class="govbb-hint">For example, first aid, public speaking, dance, cricket, sewing, drumming or budgeting.</p>
+        <div class="govbb-input-wrapper"><input class="govbb-input" type="text" data-field="Skill or activity name" /></div>
+      </div>
+      <div class="govbb-form-group">
+        <fieldset class="govbb-fieldset">
+          <legend class="govbb-fieldset__legend">How can you support this activity?</legend>
+          <div class="govbb-radio-item">
+            <input class="govbb-radio" type="radio" data-radio-name="support_level" value="I can lead this activity" data-field="Support level" />
+            <label class="govbb-radio-item__label">I can lead this activity</label>
+          </div>
+          <div class="govbb-radio-item">
+            <input class="govbb-radio" type="radio" data-radio-name="support_level" value="I can help with this activity" data-field="Support level" />
+            <label class="govbb-radio-item__label">I can help with this activity</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="govbb-form-group">
+        <label class="govbb-label">Tell us about your experience with this skill or activity</label>
+        <div class="govbb-input-wrapper"><textarea class="govbb-textarea" rows="3" data-field="Experience"></textarea></div>
+      </div>
+    </template>
+
+    <script>
+      (function () {
+        "use strict";
+
+        var STEPS = [
+          "step-application-type",
+          "step-about-you",
+          "step-contact",
+          "step-current-status",
+          "step-emergency",
+          "step-health",
+          "step-camp-experience",
+          "step-work-experience",
+          "step-references",
+          "step-organisations",
+          "step-education",
+          "step-training",
+          "step-skills",
+          "step-why",
+          "step-uploads",
+          "step-check",
+          "step-agreement"
+        ];
+        var CONFIRMATION = "step-confirmation";
+        var current = -1;
+
+        var navButtons = document.getElementById("nav-buttons");
+        var btnBack = document.getElementById("btn-back");
+        var btnContinue = document.getElementById("btn-continue");
+        var errorSummary = document.getElementById("error-summary");
+        var errorList = document.getElementById("error-summary-list");
+
+        function hideAll() {
+          var steps = document.querySelectorAll(".form-step");
+          for (var i = 0; i < steps.length; i++) steps[i].classList.remove("is-active");
+        }
+
+        function showStart() {
+          hideAll();
+          document.getElementById("step-start").classList.add("is-active");
+          navButtons.style.display = "none";
+          current = -1;
+          window.scrollTo(0, 0);
+        }
+
+        function showStep(index) {
+          hideAll();
+          clearErrors();
+          var id = STEPS[index];
+          var section = document.getElementById(id);
+          section.classList.add("is-active");
+          section.insertBefore(errorSummary, section.firstChild);
+          current = index;
+          navButtons.style.display = "flex";
+          btnContinue.textContent = id === "step-check" ? "Accept and send" : "Continue";
+          if (id === "step-check") buildCheckAnswers();
+          window.scrollTo(0, 0);
+          section.setAttribute("tabindex", "-1");
+        }
+
+        function showConfirmation() {
+          hideAll();
+          var ref = "CD-" + Math.floor(100000 + Math.random() * 900000);
+          document.getElementById("ref-number").textContent = ref;
+          document.getElementById(CONFIRMATION).classList.add("is-active");
+          navButtons.style.display = "none";
+          window.scrollTo(0, 0);
+        }
+
+        document.querySelectorAll("[data-goto]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            showStep(parseInt(btn.getAttribute("data-goto"), 10));
+          });
+        });
+
+        btnBack.addEventListener("click", function () {
+          if (current <= 0) showStart();
+          else showStep(current - 1);
+        });
+
+        btnContinue.addEventListener("click", function () {
+          if (!validateStep(STEPS[current])) return;
+          var id = STEPS[current];
+          if (id === "step-agreement") showConfirmation();
+          else showStep(current + 1);
+        });
+
+        function clearErrors() {
+          errorSummary.style.display = "none";
+          errorSummary.setAttribute("hidden", "");
+          errorList.innerHTML = "";
+          document.querySelectorAll(".govbb-form-group--error").forEach(function (g) {
+            g.classList.remove("govbb-form-group--error");
+          });
+          document.title = "Apply to be a Camp Director or Assistant Camp Director — The Government of Barbados";
+        }
+
+        function validateStep(stepId) {
+          clearErrors();
+          var section = document.getElementById(stepId);
+          var errors = [];
+          var requireds = section.querySelectorAll("[data-required]");
+          requireds.forEach(function (el) {
+            if (!isVisible(el)) return;
+            var label = el.getAttribute("data-label") || "This field";
+            var ok = true;
+            var anchorId = el.id;
+            if (el.tagName === "FIELDSET") {
+              var inputs = el.querySelectorAll("input[type=radio], input[type=checkbox]");
+              ok = Array.prototype.some.call(inputs, function (i) { return i.checked; });
+              if (inputs.length) anchorId = inputs[0].id;
+            } else if (el.type === "file") {
+              ok = el.files && el.files.length > 0;
+            } else {
+              ok = el.value && el.value.trim() !== "";
+            }
+            if (!ok) {
+              errors.push({ label: label, anchor: anchorId });
+              markFieldError(el);
+            }
+          });
+
+          if (stepId === "step-references") {
+            var refItems = section.querySelectorAll(".repeatable-item");
+            refItems.forEach(function (item, i) {
+              var first = item.querySelector('[data-field="First name"]');
+              var last = item.querySelector('[data-field="Last name"]');
+              if (first && (!first.value || !first.value.trim())) {
+                if (!first.id) first.id = "ref-first-" + i;
+                errors.push({ label: "Reference " + (i + 1) + " first name", anchor: first.id });
+                markFieldError(first);
+              }
+              if (last && (!last.value || !last.value.trim())) {
+                if (!last.id) last.id = "ref-last-" + i;
+                errors.push({ label: "Reference " + (i + 1) + " last name", anchor: last.id });
+                markFieldError(last);
+              }
+            });
+          }
+
+          if (errors.length) {
+            showErrorSummary(errors);
+            return false;
+          }
+          return true;
+        }
+
+        function isVisible(el) {
+          return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+        }
+
+        function markFieldError(el) {
+          var group = el.closest(".govbb-form-group");
+          if (group) group.classList.add("govbb-form-group--error");
+        }
+
+        function showErrorSummary(errors) {
+          errorList.innerHTML = "";
+          errors.forEach(function (e) {
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            a.href = "#" + e.anchor;
+            a.className = "govbb-error-summary__link";
+            a.textContent = e.label + " — please answer this question";
+            a.addEventListener("click", function (ev) {
+              ev.preventDefault();
+              var target = document.getElementById(e.anchor);
+              if (target) target.focus();
+            });
+            li.appendChild(a);
+            errorList.appendChild(li);
+          });
+          errorSummary.style.display = "block";
+          errorSummary.removeAttribute("hidden");
+          errorSummary.focus();
+          document.title = "Error: Apply to be a Camp Director or Assistant Camp Director";
+        }
+
+        // Conditional reveals on radios
+        document.querySelectorAll("input[type=radio][data-reveal]").forEach(function (radio) {
+          radio.addEventListener("change", function () {
+            var name = radio.name;
+            document.querySelectorAll('input[name="' + name + '"][data-reveal]').forEach(function (r) {
+              var t = r.getAttribute("data-reveal");
+              if (t) {
+                var el = document.getElementById(t);
+                if (el) el.classList.remove("is-open");
+              }
+            });
+            var target = radio.getAttribute("data-reveal");
+            if (target) {
+              var el2 = document.getElementById(target);
+              if (el2) el2.classList.add("is-open");
+            }
+          });
+        });
+
+        // Conditional reveals on checkboxes
+        document.querySelectorAll("input[type=checkbox][data-reveal]").forEach(function (cb) {
+          cb.addEventListener("change", function () {
+            var el = document.getElementById(cb.getAttribute("data-reveal"));
+            if (el) el.classList.toggle("is-open", cb.checked);
+          });
+        });
+
+        var statusBoxes = document.querySelectorAll('#status-checkboxes input[type=checkbox]');
+        function updateWorkDetails() {
+          var show = false;
+          statusBoxes.forEach(function (b) {
+            if (b.checked && (b.value === "Employed" || b.value === "Self-employed")) show = true;
+          });
+          document.getElementById("work-details").classList.toggle("is-open", show);
+        }
+
+        function applyExclusivity(group) {
+          var boxes = group.querySelectorAll("input[type=checkbox]");
+          boxes.forEach(function (box) {
+            box.addEventListener("change", function () {
+              if (!box.checked) return;
+              if (box.getAttribute("data-exclusive-all") === "true") {
+                boxes.forEach(function (other) {
+                  if (other !== box && other.checked) {
+                    other.checked = false;
+                    syncReveal(other);
+                  }
+                });
+              } else {
+                var conflicts = (box.getAttribute("data-exclusive-with") || "")
+                  .split(",").map(function (s) { return s.trim(); }).filter(Boolean);
+                boxes.forEach(function (other) {
+                  if (other !== box && conflicts.indexOf(other.value) !== -1 && other.checked) {
+                    other.checked = false;
+                    syncReveal(other);
+                  }
+                  if (other !== box && other.getAttribute("data-exclusive-all") === "true" && other.checked) {
+                    other.checked = false;
+                    syncReveal(other);
+                  }
+                });
+              }
+            });
+          });
+        }
+        function syncReveal(checkbox) {
+          if (checkbox.hasAttribute("data-reveal")) {
+            var el = document.getElementById(checkbox.getAttribute("data-reveal"));
+            if (el) el.classList.toggle("is-open", checkbox.checked);
+          }
+        }
+        applyExclusivity(document.getElementById("status-checkboxes"));
+        applyExclusivity(document.getElementById("health-checkboxes"));
+        statusBoxes.forEach(function (b) { b.addEventListener("change", updateWorkDetails); });
+
+        // Repeatable sections
+        function addRepeatableItem(container) {
+          var tplId = container.getAttribute("data-template");
+          var label = container.getAttribute("data-label") || "Item";
+          var tpl = document.getElementById(tplId);
+          var index = container.querySelectorAll(".repeatable-item").length + 1;
+          var wrapper = document.createElement("div");
+          wrapper.className = "repeatable-item";
+          var heading = document.createElement("span");
+          heading.className = "repeatable-item__label";
+          heading.textContent = label + " " + index;
+          wrapper.appendChild(heading);
+          wrapper.appendChild(tpl.content.cloneNode(true));
+
+          var uid = container.getAttribute("data-repeatable") + "-" +
+            Date.now() + "-" + Math.floor(Math.random() * 10000);
+          wrapper.querySelectorAll("input[data-radio-name]").forEach(function (r) {
+            r.name = r.getAttribute("data-radio-name") + "-" + uid;
+            var rid = r.name + "-" + r.value.replace(/\s+/g, "");
+            r.id = rid;
+            var lbl = r.nextElementSibling;
+            if (lbl && lbl.classList.contains("govbb-radio-item__label")) lbl.setAttribute("for", rid);
+          });
+          wrapper.querySelectorAll("input[data-item-reveal]").forEach(function (r) {
+            r.addEventListener("change", function () {
+              var cond = wrapper.querySelector("[data-item-conditional]");
+              if (cond) cond.classList.toggle("is-open", r.getAttribute("data-item-reveal") === "show");
+            });
+          });
+
+          if (!container.getAttribute("data-fixed")) {
+            var actions = document.createElement("div");
+            actions.className = "repeatable-actions";
+            var removeBtn = document.createElement("button");
+            removeBtn.type = "button";
+            removeBtn.className = "govbb-btn--secondary";
+            removeBtn.textContent = "Remove";
+            removeBtn.addEventListener("click", function () {
+              wrapper.remove();
+              renumber(container);
+            });
+            actions.appendChild(removeBtn);
+            wrapper.appendChild(actions);
+          }
+          container.appendChild(wrapper);
+        }
+
+        function renumber(container) {
+          var label = container.getAttribute("data-label") || "Item";
+          container.querySelectorAll(".repeatable-item").forEach(function (item, i) {
+            var h = item.querySelector(".repeatable-item__label");
+            if (h) h.textContent = label + " " + (i + 1);
+          });
+        }
+
+        document.querySelectorAll("[data-add]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var key = btn.getAttribute("data-add");
+            var container = document.querySelector('.repeatable[data-repeatable="' + key + '"]');
+            addRepeatableItem(container);
+          });
+        });
+
+        document.querySelectorAll(".repeatable").forEach(function (container) {
+          var fixed = container.getAttribute("data-fixed");
+          if (fixed) {
+            for (var i = 0; i < parseInt(fixed, 10); i++) addRepeatableItem(container);
+          } else {
+            addRepeatableItem(container);
+          }
+        });
+
+        // File uploads: show chosen filenames
+        document.querySelectorAll(".govbb-file-upload__input").forEach(function (input) {
+          input.addEventListener("change", function () {
+            var list = document.querySelector('[data-file-list-for="' + input.id + '"]');
+            if (!list) return;
+            list.innerHTML = "";
+            for (var i = 0; i < input.files.length; i++) {
+              var li = document.createElement("li");
+              li.className = "govbb-file-upload__item";
+              var name = document.createElement("span");
+              name.className = "govbb-file-upload__name";
+              name.textContent = input.files[i].name;
+              li.appendChild(name);
+              list.appendChild(li);
+            }
+            var group = input.closest(".govbb-form-group");
+            if (group) group.classList.remove("govbb-form-group--error");
+          });
+        });
+
+        // Check your answers
+        function val(name) {
+          var el = document.querySelector('[name="' + name + '"]');
+          return el ? el.value.trim() : "";
+        }
+        function radioVal(name) {
+          var el = document.querySelector('input[name="' + name + '"]:checked');
+          return el ? el.value : "";
+        }
+        function checkboxVals(name) {
+          var els = document.querySelectorAll('input[name="' + name + '"]:checked');
+          return Array.prototype.map.call(els, function (e) { return e.value; }).join(", ");
+        }
+        function fileName(id) {
+          var el = document.getElementById(id);
+          return el && el.files && el.files.length ? el.files[0].name : "No file uploaded";
+        }
+        function esc(s) {
+          return (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        }
+
+        function repeatableSummary(key) {
+          var container = document.querySelector('.repeatable[data-repeatable="' + key + '"]');
+          if (!container) return [];
+          var items = [];
+          container.querySelectorAll(".repeatable-item").forEach(function (item) {
+            var fields = {};
+            var any = false;
+            item.querySelectorAll("[data-field]").forEach(function (f) {
+              var fname = f.getAttribute("data-field");
+              var v = "";
+              if (f.type === "radio") { if (f.checked) v = f.value; }
+              else { v = f.value; }
+              if (v && v.trim()) { fields[fname] = v.trim(); any = true; }
+            });
+            if (any) items.push(fields);
+          });
+          return items;
+        }
+
+        function buildCheckAnswers() {
+          var stepIndex = {};
+          STEPS.forEach(function (id, i) { stepIndex[id] = i; });
+
+          function row(label, value, stepId) {
+            value = value && value !== "" ? esc(value)
+              : '<span style="color:var(--color-mid-grey-00)">Not answered</span>';
+            return '<tr><th>' + esc(label) + '</th><td>' + value +
+              '</td><td class="cya-change"><a class="govbb-link" href="#" data-change="' +
+              stepIndex[stepId] + '">Change</a></td></tr>';
+          }
+          function repeatBlock(title, key, stepId, primaryFields) {
+            var items = repeatableSummary(key);
+            if (!items.length) {
+              return '<tr><th>' + esc(title) +
+                '</th><td><span style="color:var(--color-mid-grey-00)">None added</span></td>' +
+                '<td class="cya-change"><a class="govbb-link" href="#" data-change="' +
+                stepIndex[stepId] + '">Change</a></td></tr>';
+            }
+            var html = "";
+            items.forEach(function (it, i) {
+              var parts = [];
+              primaryFields.forEach(function (pf) { if (it[pf]) parts.push(esc(it[pf])); });
+              if (!parts.length) { for (var k in it) parts.push(esc(it[k])); }
+              html += '<tr><th>' + esc(title) + " " + (i + 1) + '</th><td>' + parts.join(" — ") +
+                '</td><td class="cya-change">' +
+                (i === 0 ? '<a class="govbb-link" href="#" data-change="' + stepIndex[stepId] + '">Change</a>' : '') +
+                '</td></tr>';
+            });
+            return html;
+          }
+
+          var dob = [val("dob_day"), val("dob_month"), val("dob_year")].filter(Boolean).join(" ");
+          var name = [val("first_name"), val("middle_name"), val("last_name")].filter(Boolean).join(" ");
+          var addr = [val("addr1"), val("addr2"), val("parish")].filter(Boolean).join(", ");
+          var ecName = [val("ec_first"), val("ec_middle"), val("ec_last")].filter(Boolean).join(" ");
+
+          var html = "";
+          html += '<h2 class="govbb-text-h2 cya-section-title">Application details</h2><table class="cya-table"><tbody>';
+          html += row("Position applied for", radioVal("position"), "step-application-type");
+          html += row("Area of interest", radioVal("area"), "step-application-type");
+          html += row("Preferred parish or camp venue", val("preferred_venue"), "step-application-type");
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Personal details</h2><table class="cya-table"><tbody>';
+          html += row("Name", name, "step-about-you");
+          html += row("Date of birth", dob, "step-about-you");
+          html += row("Sex", radioVal("sex"), "step-about-you");
+          html += row("Barbados National Identification (ID) number", val("nrn"), "step-about-you");
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Contact details</h2><table class="cya-table"><tbody>';
+          html += row("Address", addr, "step-contact");
+          html += row("Email address", val("email"), "step-contact");
+          html += row("Mobile phone number", val("mobile"), "step-contact");
+          html += row("Home phone number", val("home_phone"), "step-contact");
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Current status</h2><table class="cya-table"><tbody>';
+          html += row("Current status", checkboxVals("status"), "step-current-status");
+          html += row("Give Back volunteer", radioVal("giveback"), "step-current-status");
+          if (radioVal("giveback") === "Yes") {
+            html += row("Institution", val("giveback_institution"), "step-current-status");
+            html += row("Area of study", val("giveback_study"), "step-current-status");
+          }
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Emergency contact</h2><table class="cya-table"><tbody>';
+          html += row("Name", ecName, "step-emergency");
+          html += row("Email address", val("ec_email"), "step-emergency");
+          html += row("Phone number", val("ec_phone"), "step-emergency");
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Health information</h2><table class="cya-table"><tbody>';
+          html += row("Health conditions or support needs", checkboxVals("health"), "step-health");
+          html += row("Currently taking medicine", radioVal("medicine"), "step-health");
+          if (radioVal("medicine") === "Yes") html += row("Medicine you are taking", val("medicine_text"), "step-health");
+          html += row("Allergic to medicine", radioVal("med_allergy"), "step-health");
+          if (radioVal("med_allergy") === "Yes") html += row("Medicine you are allergic to", val("med_allergy_text"), "step-health");
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Experience</h2><table class="cya-table"><tbody>';
+          html += row("Has camp experience", radioVal("camp_exp"), "step-camp-experience");
+          if (radioVal("camp_exp") === "Yes") html += repeatBlock("Camp experience", "camp", "step-camp-experience", ["Camp name", "Camp location"]);
+          html += row("Has work or volunteer experience", radioVal("work_exp"), "step-work-experience");
+          if (radioVal("work_exp") === "Yes") html += repeatBlock("Work or volunteer experience", "work", "step-work-experience", ["Employer/organisation", "Type of work"]);
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">References</h2><table class="cya-table"><tbody>';
+          html += repeatBlock("Reference", "reference", "step-references", ["First name", "Last name"]);
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Organisations</h2><table class="cya-table"><tbody>';
+          html += row("Belongs to organisations", radioVal("orgs"), "step-organisations");
+          if (radioVal("orgs") === "Yes") html += repeatBlock("Organisation", "org", "step-organisations", ["Organisation name", "Position held"]);
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Education</h2><table class="cya-table"><tbody>';
+          html += repeatBlock("Education", "education", "step-education", ["Name of school", "Type"]);
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Training and certificates</h2><table class="cya-table"><tbody>';
+          html += repeatBlock("Training or certificate", "training", "step-training", ["Name", "Institution"]);
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Skills and activities</h2><table class="cya-table"><tbody>';
+          html += repeatBlock("Skill or activity", "skill", "step-skills", ["Skill or activity name", "Support level"]);
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Volunteer information</h2><table class="cya-table"><tbody>';
+          html += row("What can you contribute to the camp?", val("contribute"), "step-why");
+          html += row("What can a well-run camp contribute to children?", val("well_run"), "step-why");
+          html += row("Personal goals", val("goals"), "step-why");
+          html += row("Concerns about responsibility for children", radioVal("concerns"), "step-why");
+          if (radioVal("concerns") === "Yes") html += row("Concerns", val("concerns_text"), "step-why");
+          html += "</tbody></table>";
+
+          html += '<h2 class="govbb-text-h2 cya-section-title">Photo and documents</h2><table class="cya-table"><tbody>';
+          html += row("Photo for camp ID card", fileName("upload-photo"), "step-uploads");
+          html += row("Barbados National Identification (ID) card", fileName("upload-id"), "step-uploads");
+          html += row("Reference letter 1", fileName("upload-ref1"), "step-uploads");
+          html += row("Reference letter 2", fileName("upload-ref2"), "step-uploads");
+          html += row("Health certificate", fileName("upload-health"), "step-uploads");
+          html += "</tbody></table>";
+
+          var container = document.getElementById("cya-content");
+          container.innerHTML = html;
+          container.querySelectorAll("[data-change]").forEach(function (a) {
+            a.addEventListener("click", function (ev) {
+              ev.preventDefault();
+              showStep(parseInt(a.getAttribute("data-change"), 10));
+            });
+          });
+        }
+
+        showStart();
+      })();
+    </script>
+  </body>
+</html>
