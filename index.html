@@ -65,6 +65,12 @@
         border-left: var(--spacing-xxs) solid #d4351c;
         padding-left: var(--spacing-m);
       }
+      .visually-hidden {
+        position: absolute !important;
+        width: 1px; height: 1px;
+        margin: -1px; padding: 0; border: 0;
+        clip: rect(0 0 0 0); overflow: hidden; white-space: nowrap;
+      }
       .placeholder-note {
         background: var(--color-yellow-90, #fff6d6);
         padding: var(--spacing-xs) var(--spacing-s);
@@ -148,7 +154,7 @@
 
             <h2 class="govbb-text-h2 section-subhead">What you need before you start</h2>
             <p class="govbb-text-body">You will need:</p>
-            <ul class="plain-list govbb-text-body">
+            <ul class="govbb-list govbb-list--bullet">
               <li>
                 your Barbados National Identification (ID) card, as you will need to enter the number
                 and upload a digital copy
@@ -228,19 +234,22 @@
               </div>
 
               <div class="govbb-form-group">
-                <fieldset class="govbb-fieldset" data-required data-label="Which area are you interested in?">
-                  <legend class="govbb-fieldset__legend">Which area are you interested in?</legend>
-                  <div class="govbb-radio-item">
-                    <input class="govbb-radio" id="area-general" type="radio" name="area" value="General" />
-                    <label class="govbb-radio-item__label" for="area-general">General</label>
-                  </div>
-                  <div class="govbb-radio-item">
-                    <input class="govbb-radio" id="area-cultural" type="radio" name="area" value="Cultural Arts" />
-                    <label class="govbb-radio-item__label" for="area-cultural">Cultural Arts</label>
-                  </div>
-                  <div class="govbb-radio-item">
-                    <input class="govbb-radio" id="area-support" type="radio" name="area" value="Working with children who need additional support" />
-                    <label class="govbb-radio-item__label" for="area-support">Working with children who need additional support</label>
+                <fieldset class="govbb-fieldset" data-required data-label="Which areas are you interested in?">
+                  <legend class="govbb-fieldset__legend">Which areas are you interested in?</legend>
+                  <div class="govbb-hint">Select all that apply.</div>
+                  <div class="govbb-checkboxes">
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="area-general" type="checkbox" name="area" value="General" />
+                      <label class="govbb-checkbox-item__label" for="area-general">General</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="area-cultural" type="checkbox" name="area" value="Cultural Arts" />
+                      <label class="govbb-checkbox-item__label" for="area-cultural">Cultural Arts</label>
+                    </div>
+                    <div class="govbb-checkbox-item">
+                      <input class="govbb-checkbox" id="area-support" type="checkbox" name="area" value="Working with children who need additional support" />
+                      <label class="govbb-checkbox-item__label" for="area-support">Working with children who need additional support</label>
+                    </div>
                   </div>
                 </fieldset>
               </div>
@@ -756,7 +765,7 @@
                 <span class="form-page__service-title govbb-text-body">Camp Director application</span>
                 <h1 class="govbb-text-h1">Tell us about your references</h1>
               </div>
-              <ul class="plain-list govbb-text-body">
+              <ul class="govbb-list govbb-list--bullet">
                 <li>You must add 3 references.</li>
                 <li>Your references must not be relatives.</li>
                 <li>Ask each person before adding their contact details.</li>
@@ -1360,7 +1369,7 @@
           section.insertBefore(errorSummary, section.firstChild);
           current = index;
           navButtons.style.display = "flex";
-          btnContinue.textContent = id === "step-check" ? "Accept and send" : "Continue";
+          btnContinue.textContent = id === "step-agreement" ? "Accept and send" : "Continue";
           if (id === "step-check") buildCheckAnswers();
           window.scrollTo(0, 0);
           section.setAttribute("tabindex", "-1");
@@ -1400,7 +1409,59 @@
           document.querySelectorAll(".govbb-form-group--error").forEach(function (g) {
             g.classList.remove("govbb-form-group--error");
           });
+          document.querySelectorAll(".field-error-msg").forEach(function (m) { m.remove(); });
+          document.querySelectorAll('[aria-invalid="true"]').forEach(function (el) {
+            el.removeAttribute("aria-invalid");
+            var d = el.getAttribute("aria-describedby");
+            if (d) {
+              d = d.split(/\s+/).filter(function (t) { return t && !/-error$/.test(t); }).join(" ");
+              if (d) el.setAttribute("aria-describedby", d);
+              else el.removeAttribute("aria-describedby");
+            }
+          });
           document.title = "Apply to be a Camp Director or Assistant Camp Director — The Government of Barbados";
+        }
+
+        function isValidDate(d, m, y) {
+          if (!(d >= 1 && d <= 31 && m >= 1 && m <= 12 && y >= 1900 && y <= 2100)) return false;
+          var dt = new Date(y, m - 1, d);
+          return dt.getFullYear() === y && dt.getMonth() === m - 1 && dt.getDate() === d;
+        }
+
+        function messageFor(el, label) {
+          if (el.tagName === "FIELDSET") {
+            var choices = el.querySelectorAll("input[type=radio], input[type=checkbox]");
+            if (choices.length) return "Select an option";
+            return "Enter " + label.toLowerCase();
+          }
+          if (el.tagName === "SELECT") return "Select " + label.toLowerCase();
+          if (el.type === "file") return "Upload a file";
+          return "Enter " + label.toLowerCase();
+        }
+
+        function injectInlineError(el, message, anchorId) {
+          var msg = document.createElement("p");
+          msg.className = "govbb-error-message field-error-msg";
+          msg.id = anchorId + "-error";
+          msg.innerHTML = '<span class="visually-hidden">Error:</span> ' + esc(message);
+          if (el.tagName === "FIELDSET") {
+            var optblock = el.querySelector(".govbb-radio-item, .govbb-checkboxes, .govbb-date-input");
+            if (optblock) el.insertBefore(msg, optblock);
+            else el.appendChild(msg);
+          } else {
+            var wrapper = el.closest(".govbb-input-wrapper, .govbb-select-wrapper, .govbb-file-upload");
+            var ref = wrapper || el;
+            ref.parentNode.insertBefore(msg, ref);
+          }
+          el.setAttribute("aria-invalid", "true");
+          var existing = (el.getAttribute("aria-describedby") || "").trim();
+          el.setAttribute("aria-describedby", (existing ? existing + " " : "") + msg.id);
+        }
+
+        function fail(errors, el, message, anchorId) {
+          errors.push({ message: message, anchor: anchorId });
+          markFieldError(el);
+          injectInlineError(el, message, anchorId);
         }
 
         function validateStep(stepId) {
@@ -1413,18 +1474,50 @@
             var label = el.getAttribute("data-label") || "This field";
             var ok = true;
             var anchorId = el.id;
+            var dateField = null;
+
             if (el.tagName === "FIELDSET") {
-              var inputs = el.querySelectorAll("input[type=radio], input[type=checkbox]");
-              ok = Array.prototype.some.call(inputs, function (i) { return i.checked; });
-              if (inputs.length) anchorId = inputs[0].id;
+              var choices = el.querySelectorAll("input[type=radio], input[type=checkbox]");
+              if (choices.length) {
+                // radio / checkbox group: at least one must be chosen
+                ok = Array.prototype.some.call(choices, function (i) { return i.checked; });
+                anchorId = choices[0].id;
+              } else {
+                // text-based fieldset (e.g. date inputs): every part must be filled
+                var parts = el.querySelectorAll("input, select, textarea");
+                ok = parts.length > 0 && Array.prototype.every.call(parts, function (i) {
+                  return i.value && i.value.trim() !== "";
+                });
+                if (parts.length) anchorId = parts[0].id;
+                if (el.querySelector(".govbb-date-input")) dateField = el;
+              }
             } else if (el.type === "file") {
               ok = el.files && el.files.length > 0;
             } else {
               ok = el.value && el.value.trim() !== "";
             }
+
             if (!ok) {
-              errors.push({ label: label, anchor: anchorId });
-              markFieldError(el);
+              fail(errors, el, messageFor(el, label), anchorId);
+              return;
+            }
+
+            // Real date validation for date-input fieldsets
+            if (dateField) {
+              var f = dateField.querySelectorAll(".govbb-date-input__field");
+              var dd = parseInt(f[0].value, 10), mm = parseInt(f[1].value, 10), yy = parseInt(f[2].value, 10);
+              if (!isValidDate(dd, mm, yy)) {
+                fail(errors, dateField, "Enter a real " + label.toLowerCase() + ", for example 27 3 1990", anchorId);
+                return;
+              }
+              if (dateField.querySelector("#dob-day")) {
+                var today = new Date();
+                today.setHours(0, 0, 0, 0);
+                if (new Date(yy, mm - 1, dd) > today) {
+                  fail(errors, dateField, "Date of birth must be in the past", anchorId);
+                  return;
+                }
+              }
             }
           });
 
@@ -1435,13 +1528,11 @@
               var last = item.querySelector('[data-field="Last name"]');
               if (first && (!first.value || !first.value.trim())) {
                 if (!first.id) first.id = "ref-first-" + i;
-                errors.push({ label: "Reference " + (i + 1) + " first name", anchor: first.id });
-                markFieldError(first);
+                fail(errors, first, "Enter reference " + (i + 1) + " first name", first.id);
               }
               if (last && (!last.value || !last.value.trim())) {
                 if (!last.id) last.id = "ref-last-" + i;
-                errors.push({ label: "Reference " + (i + 1) + " last name", anchor: last.id });
-                markFieldError(last);
+                fail(errors, last, "Enter reference " + (i + 1) + " last name", last.id);
               }
             });
           }
@@ -1469,7 +1560,7 @@
             var a = document.createElement("a");
             a.href = "#" + e.anchor;
             a.className = "govbb-error-summary__link";
-            a.textContent = e.label + " — please answer this question";
+            a.textContent = e.message || e.label || "Please answer this question";
             a.addEventListener("click", function (ev) {
               ev.preventDefault();
               var target = document.getElementById(e.anchor);
@@ -1731,7 +1822,7 @@
           var html = "";
           html += '<h2 class="govbb-text-h2 cya-section-title">Application details</h2><table class="cya-table"><tbody>';
           html += row("Position applied for", radioVal("position"), "step-application-type");
-          html += row("Area of interest", radioVal("area"), "step-application-type");
+          html += row("Areas of interest", checkboxVals("area"), "step-application-type");
           html += row("Preferred parish or camp venue", val("preferred_venue"), "step-application-type");
           html += "</tbody></table>";
 
