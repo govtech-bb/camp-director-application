@@ -409,29 +409,28 @@
               </div>
 
               <div class="govbb-form-group">
-                <fieldset class="govbb-fieldset" data-required data-label="Which of these describes you now?">
-                  <legend class="govbb-fieldset__legend">Which of these describes you now?</legend>
-                  <div class="govbb-hint">Select all that apply.</div>
-                  <div class="govbb-checkboxes" id="status-checkboxes">
-                    <div class="govbb-checkbox-item">
-                      <input class="govbb-checkbox" id="status-employed" type="checkbox" name="status" value="Employed" />
-                      <label class="govbb-checkbox-item__label" for="status-employed">Employed</label>
+                <fieldset class="govbb-fieldset" data-required data-label="Which of these best describes you now?">
+                  <legend class="govbb-fieldset__legend">Which of these best describes you now?</legend>
+                  <div id="status-checkboxes">
+                    <div class="govbb-radio-item">
+                      <input class="govbb-radio" id="status-employed" type="radio" name="status" value="Employed" />
+                      <label class="govbb-radio-item__label" for="status-employed">Employed</label>
                     </div>
-                    <div class="govbb-checkbox-item">
-                      <input class="govbb-checkbox" id="status-self" type="checkbox" name="status" value="Self-employed" />
-                      <label class="govbb-checkbox-item__label" for="status-self">Self-employed</label>
+                    <div class="govbb-radio-item">
+                      <input class="govbb-radio" id="status-self" type="radio" name="status" value="Self-employed" />
+                      <label class="govbb-radio-item__label" for="status-self">Self-employed</label>
                     </div>
-                    <div class="govbb-checkbox-item">
-                      <input class="govbb-checkbox" id="status-student" type="checkbox" name="status" value="Student" />
-                      <label class="govbb-checkbox-item__label" for="status-student">Student</label>
+                    <div class="govbb-radio-item">
+                      <input class="govbb-radio" id="status-student" type="radio" name="status" value="Student" />
+                      <label class="govbb-radio-item__label" for="status-student">Student</label>
                     </div>
-                    <div class="govbb-checkbox-item">
-                      <input class="govbb-checkbox" id="status-unemployed" type="checkbox" name="status" value="Unemployed" data-exclusive-all="true" />
-                      <label class="govbb-checkbox-item__label" for="status-unemployed">Unemployed</label>
+                    <div class="govbb-radio-item">
+                      <input class="govbb-radio" id="status-unemployed" type="radio" name="status" value="Unemployed" />
+                      <label class="govbb-radio-item__label" for="status-unemployed">Unemployed</label>
                     </div>
-                    <div class="govbb-checkbox-item">
-                      <input class="govbb-checkbox" id="status-retired" type="checkbox" name="status" value="Retired" data-exclusive-all="true" />
-                      <label class="govbb-checkbox-item__label" for="status-retired">Retired</label>
+                    <div class="govbb-radio-item">
+                      <input class="govbb-radio" id="status-retired" type="radio" name="status" value="Retired" />
+                      <label class="govbb-radio-item__label" for="status-retired">Retired</label>
                     </div>
                   </div>
                 </fieldset>
@@ -1602,7 +1601,7 @@
           });
         });
 
-        var statusBoxes = document.querySelectorAll('#status-checkboxes input[type=checkbox]');
+        var statusBoxes = document.querySelectorAll('#status-checkboxes input');
         function updateWorkDetails() {
           var show = false;
           statusBoxes.forEach(function (b) {
