@@ -24,6 +24,6 @@ The design system CSS and assets load from the published CDN, so no build step i
 
 ## Status
 
-Alpha prototype. Some content is placeholder pending confirmation from the
-Ministry of Youth, Sports and Community Empowerment (application close date,
-support email and phone number).
+Alpha prototype, owned by the Division of Youth Affairs, Division of Youth and
+Culture, Prime Minister's Office. Some content is still placeholder pending
+confirmation (application close date and support phone number).
