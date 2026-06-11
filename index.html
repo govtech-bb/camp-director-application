@@ -414,11 +414,11 @@
                   <div class="govbb-hint">Select all that apply.</div>
                   <div class="govbb-checkboxes" id="status-checkboxes">
                     <div class="govbb-checkbox-item">
-                      <input class="govbb-checkbox" id="status-employed" type="checkbox" name="status" value="Employed" data-exclusive-with="Unemployed" />
+                      <input class="govbb-checkbox" id="status-employed" type="checkbox" name="status" value="Employed" />
                       <label class="govbb-checkbox-item__label" for="status-employed">Employed</label>
                     </div>
                     <div class="govbb-checkbox-item">
-                      <input class="govbb-checkbox" id="status-self" type="checkbox" name="status" value="Self-employed" data-exclusive-with="Unemployed" />
+                      <input class="govbb-checkbox" id="status-self" type="checkbox" name="status" value="Self-employed" />
                       <label class="govbb-checkbox-item__label" for="status-self">Self-employed</label>
                     </div>
                     <div class="govbb-checkbox-item">
@@ -426,11 +426,11 @@
                       <label class="govbb-checkbox-item__label" for="status-student">Student</label>
                     </div>
                     <div class="govbb-checkbox-item">
-                      <input class="govbb-checkbox" id="status-unemployed" type="checkbox" name="status" value="Unemployed" data-exclusive-with="Employed,Self-employed" />
+                      <input class="govbb-checkbox" id="status-unemployed" type="checkbox" name="status" value="Unemployed" data-exclusive-all="true" />
                       <label class="govbb-checkbox-item__label" for="status-unemployed">Unemployed</label>
                     </div>
                     <div class="govbb-checkbox-item">
-                      <input class="govbb-checkbox" id="status-retired" type="checkbox" name="status" value="Retired" />
+                      <input class="govbb-checkbox" id="status-retired" type="checkbox" name="status" value="Retired" data-exclusive-all="true" />
                       <label class="govbb-checkbox-item__label" for="status-retired">Retired</label>
                     </div>
                   </div>
